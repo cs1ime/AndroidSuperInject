@@ -1,0 +1,1 @@
+adb shell su -c killall -9 system_server
