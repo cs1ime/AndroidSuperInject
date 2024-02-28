@@ -9,3 +9,15 @@
 4. 编写要注入的SO文件时需保证不写全局变量（你在一个权限为r-x的内存范围内运行这个SO）
 
 仓库里的代码是一个hook system_server的read函数从而劫持eventhub实现模拟触摸的半成品
+
+## 使用方式：
+把仓库里的build.sh文件中的以下几个变量修改成ndk的clang路径
+```
+export CXX
+export CC
+export OBJCOPY
+export STRIP
+```
+bash 运行./build.sh
+bash 运行./run.sh
+
